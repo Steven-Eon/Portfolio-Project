@@ -13,19 +13,24 @@ header {
     color: #f9faf8
 }
 
-div.container {
+div.maincontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
-    
+    align-items: center;
+    justify-items: center;
 }
 
 a.logo {
     flex: 1, 0.75, auto;
     font-weight: bold;
     font-size: 24px;
-    color: #F9FAF8
+    color: #F9FAF8;
 }
 
 a.links {
