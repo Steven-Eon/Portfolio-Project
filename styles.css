@@ -1,49 +1,15 @@
-* {
-    font-family: "Roboto";
-    
+*
+{
+    color: #F9FAF8;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
+html, body {
+    height: 100%;
+}
+  
 body {
-    margin: 0
-}
-
-.mainGap div{
-    margin-top:2.5vh;
-    margin-bottom: 4.5vh;
-}
-
-.night {
-    background-color: #1F2937;
-    color: #1F2937;
-}
-
-.blank {
-    background-color: white;
-    color:white
-}
-
-.blueFrame {
-    background-color: white;
-    color: #3882F6;
-    border-radius: 10%;
-    margin-right: 1%;
-
-}
-
-.spaceEvenly {
-    justify-content: space-evenly;
-}
-
-.horizontalCenter {
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    justify-content: center;
-}
-
-.flexColumn {
-    display: flex;
-    flex-direction: column;
+    margin: 0;
 }
 
 .flexRow {
@@ -51,103 +17,121 @@ body {
     flex-direction: row;
 }
 
-.auto {
-    flex: auto;
+.textCenter {
+    text-align: center;
 }
 
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
 
 .header {
-    justify-content: space-around;
-    justify-content: space-around;
-    align-items: center;
-    justify-items: center;
-}
-
-.headerText {
-    font-weight: bolder;
-    font-size: 48px;
-    color: #F9FAF8
-}
-
-.boldText {
-    font-weight: bold;
-    font-size: 36px;
-    color: black
-}
-
-.defaultText {
-    font-weight: lighter;
-    font-size: 18px;
-    color: #E5E7EB
-
-}
-
-a.logo {
-    font-weight: bold;
-    font-size: 24px;
-    color: #F9FAF8;
-}
-
-a.links {
-    flex: 1, 1, auto;
-    font-size: 18px;
-    color: #E5E7EB;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-
-.smallContentBox{
-    max-width: 10%;
-    max-height: 10%;
-}
-
-.medContentBox
-{
-    max-width: 40vw;
-    max-height: 40vh;
-}
-
-.medContentBox button {
-    margin-top: 10px
-}
-
-.imageBackground {
-    background-color: gray;
-    border: 0px;
-    border-radius: 5%;
-}
-
-
-.outline {
+    background-color: #1F2937;
     flex: auto;
-    width: 40vw;
-    height: 30vh;
-    border: 3px;
-    border-style: solid;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem 2rem;
+    font-size: 2vw;
 }
-    
-.nogap{
+
+.body {
+    background-color: #1F2937;
+    flex: auto;
+    padding: 2rem 4rem 4rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.body * {
     margin: 0;
 }
 
-.buttonDefault {
-    height: 5vh;
-    width: 10vw;
-    border-radius: 10%;
-    font-weight: bold;
-    color:#F9FAF8;
-
+.body > div {
+    max-width: 35vw;
 }
 
-.buttonFill {
+.links * {
+    margin: 0 1rem 0 0;
+}
+
+.mainBold {
+    font-size: 5vw;
+    font-weight: bolder;
+}
+
+.mainHeader {
+    font-size: 3vw;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.mainDefault {
+    font-size: 2vw;
+}
+
+.largeImage {
+    width: 40vw;
+    height: 20vw;
+    border-width: 0.1rem;
+    border-style: solid;
+}
+
+.smallButton {
+    margin-top: 0.5rem;
+    width: 15vw;
+    height: 4vw;
+    font-size: 1.5vw;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-radius: 0.5rem;
     background-color: #3882F6;
+    color: #E5E7EB;
+    font-weight: bolder;
+}
+
+.bodyLight{
+    background-color: #F9FAF8;
+    color: black;
+}
+
+.bodyLight * {
+    margin: 0;
+    color: black;
+}
+
+.gallary {
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.gallary *{
+    color: #1F2937;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.gallaryFrame {
+    margin: 1rem;
+    height: 15vw;
+    width: 15vw;
+    border-width: 0.2rem;
+    border-radius: 0.5rem;
     border-color: #3882F6;
     border-style: solid;
 }
 
-.buttonOutline {
-    
+.bodyGray {
+    background-color: #E5E7EB;
 }
 
+.bodyGray * {
+    color: #1F2937;
+}
 
+.aboutMe {
+    padding: 2rem 4rem;
+}
