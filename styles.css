@@ -4,7 +4,7 @@
 html {
     overflow-y: hidden;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 1vmax;
 }
 
 body {
@@ -50,13 +50,23 @@ body {
 .titleText {
     max-width: 40vw;
     font-weight: bolder;
-    font-size: 1.5vmax;
+    font-size: 1.5rem;
 }
 
 .titleLink {
     text-decoration: none;
-    font-size: 1vmax;
+    font-size: 1rem;
     color: #103E70;
+    background: linear-gradient(90deg, transparent 50%, #d66e7d 50%);
+    background-size: 200%, 200%;
+    background-position: 0%, 0%;
+    transition-timing-function: ease-in-out;
+    transition: 1s;
+}
+
+.titleLink:hover {
+    background-position: 300%, 0%;
+
 }
 
 .linkContainer {
